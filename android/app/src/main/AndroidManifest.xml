@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.image_edit">
+    package="com.example.image_edit" xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-sdk tools:overrideLibrary="opencv_4"/>
    <application
         android:label="image_edit"
         android:name="${applicationName}"
