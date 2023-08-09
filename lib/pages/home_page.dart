@@ -1,16 +1,3 @@
-// import 'package:flutter/material.dart';
-// import 'package:opencv_4/opencv_4.dart';
-
-// class HomePage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     // TODO: implement build
-//     return Scaffold(
-//       body: Center(child: Text('首页')),
-//     );
-//   }
-// }
-
 import 'dart:io';
 import 'dart:typed_data';
 
@@ -21,9 +8,6 @@ import 'package:opencv_4/opencv_4.dart';
 //uncomment when image_picker is installed
 import 'package:image_picker/image_picker.dart';
 
-// void main() {
-//   runApp(MyApp());
-// }
 
 class HomePage extends StatelessWidget {
   @override
@@ -99,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
   _testFromAssets() async {
     testOpenCV(
       pathFrom: CVPathFrom.ASSETS,
-      pathString: 'assets/Test.JPG',
+      pathString: 'assets/hanhan.jpeg',
       thresholdValue: 150,
       maxThresholdValue: 200,
       thresholdType: Cv2.THRESH_BINARY,
